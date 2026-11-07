@@ -1,0 +1,31 @@
+# Environment & Secrets
+.env
+.env*.local
+!.env.example
+
+# Workout logs & Routine data (Private History)
+latest_hevy_summary.json
+latest_workouts_summary.md
+routines_backup.json
+exercise_templates.json
+workout_*.json
+routine_*.json
+*.jsonl
+
+# Python & Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+
+# Logs & System Files
+*.log
+.DS_Store
+.vscode/
+.idea/

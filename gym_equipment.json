@@ -1,0 +1,126 @@
+{
+  "gym_name": "Primary Gym",
+  "notes": "Available machines, cable stations, free weights, and gym-specific equipment quirks. The AI agent MUST consult this list when designing or modifying workout routines to ensure suggested exercises can actually be performed.",
+  "available_machines": [
+    {
+      "name": "Smith Machine",
+      "target_muscles": ["Chest", "Shoulders", "Quads"],
+      "typical_exercises": ["Incline Bench Press (Smith Machine)"],
+      "notes": "Plates only, starting resistance not included. Incline bench notch #11 or #12."
+    },
+    {
+      "name": "Chest Press (Machine)",
+      "target_muscles": ["Chest", "Triceps", "Front Delts"],
+      "typical_exercises": ["Chest Press (Machine)"],
+      "notes": "Pin-loaded. Seat mat optional."
+    },
+    {
+      "name": "Pec Deck / Butterfly Machine",
+      "target_muscles": ["Chest"],
+      "typical_exercises": ["Butterfly (Pec Deck)"],
+      "notes": "Clean, controlled reps with peak contraction squeeze."
+    },
+    {
+      "name": "Reverse Fly / Rear Delt Machine",
+      "target_muscles": ["Rear Delts", "Upper Back"],
+      "typical_exercises": ["Rear Delt Reverse Fly (Machine)"],
+      "notes": "Sit slightly back, chest to pad, initiate with scapular protraction."
+    },
+    {
+      "name": "Seated Shoulder Press (Machine)",
+      "target_muscles": ["Shoulders", "Triceps"],
+      "typical_exercises": ["Seated Shoulder Press (Machine)"],
+      "notes": "Elbows forward, push through wrists."
+    },
+    {
+      "name": "Cable Station / Functional Trainer",
+      "target_muscles": ["Back", "Arms", "Shoulders", "Chest"],
+      "typical_exercises": [
+        "Lat Pulldown (Cable)",
+        "Seated Cable Row - Bar Grip",
+        "Triceps Pressdown",
+        "Overhead Triceps Extension (Cable)",
+        "Face Pull"
+      ],
+      "notes": "Pulleys have a 2:1 mechanical advantage ratio."
+    },
+    {
+      "name": "Leg Press (Machine)",
+      "target_muscles": ["Quads", "Glutes"],
+      "typical_exercises": ["Leg Press (Machine)"],
+      "notes": "Sled / plate-loaded."
+    },
+    {
+      "name": "Lying Leg Curl (Machine)",
+      "target_muscles": ["Hamstrings"],
+      "typical_exercises": ["Lying Leg Curl (Machine)"],
+      "notes": "Pin-loaded. Pad setting notch #5."
+    },
+    {
+      "name": "Leg Extension (Machine)",
+      "target_muscles": ["Quads"],
+      "typical_exercises": ["Leg Extension (Machine)"],
+      "notes": "Pin-loaded."
+    },
+    {
+      "name": "Hip Thrust Machine",
+      "target_muscles": ["Glutes", "Hamstrings"],
+      "typical_exercises": ["Hip Thrust (Machine)"],
+      "notes": "Belt/pad setup."
+    },
+    {
+      "name": "Hip Adduction Machine",
+      "target_muscles": ["Adductors (Inner Thigh)"],
+      "typical_exercises": ["Hip Adduction (Machine)"],
+      "notes": "Pin-loaded. Starting position pin hole #7."
+    },
+    {
+      "name": "Hip Abduction Machine",
+      "target_muscles": ["Glute Medius / Abductors"],
+      "typical_exercises": ["Hip Abduction (Machine)"],
+      "notes": "Pin-loaded."
+    },
+    {
+      "name": "Hyperextension / 45° Back Extension Bench",
+      "target_muscles": ["Lower Back", "Glutes", "Hamstrings"],
+      "typical_exercises": ["Back Extension (Weighted Hyperextension)"],
+      "notes": "Use plates or dumbbells for added resistance."
+    },
+    {
+      "name": "Captain's Chair / Pull-Up & Dip Tower",
+      "target_muscles": ["Abs", "Lats", "Chest"],
+      "typical_exercises": ["Hanging Knee Raise", "Pull-ups"],
+      "notes": "Vertical knee raise station."
+    }
+  ],
+  "free_weights_and_bars": [
+    {
+      "name": "Trap Bar / Hex Bar",
+      "notes": "20kg bar + Olympic weight plates. Used for Trap Bar Deadlifts."
+    },
+    {
+      "name": "Olympic Barbells & Plates",
+      "notes": "Standard 20kg bars, curl bars, Olympic plates."
+    },
+    {
+      "name": "Dumbbells",
+      "notes": "Full dumbbell rack. Used for Bulgarian Split Squats, Incline Rows, Lateral Raises, Curls."
+    },
+    {
+      "name": "Adjustable Benches",
+      "notes": "Flat to 90° incline adjustable benches."
+    }
+  ],
+  "cable_attachments": [
+    "Wide-grip Lat Pulldown bar",
+    "Close-grip / V-bar handle",
+    "Straight cable bar",
+    "Triceps rope",
+    "Single D-handles"
+  ],
+  "unavailable_or_lacking": [
+    "Hack Squat machine (use Leg Press or Smith Squat instead)",
+    "Pendulum Squat (use Leg Press instead)",
+    "Standing Calf Raise machine"
+  ]
+}
