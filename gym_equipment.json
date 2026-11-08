@@ -4,93 +4,429 @@
   "available_machines": [
     {
       "name": "Smith Machine",
-      "target_muscles": ["Chest", "Shoulders", "Quads"],
-      "typical_exercises": ["Incline Bench Press (Smith Machine)"],
-      "notes": "Plates only, starting resistance not included. Incline bench notch #11 or #12."
+      "target_muscles": [
+        "chest",
+        "shoulders",
+        "triceps",
+        "quadriceps",
+        "glutes",
+        "hamstrings",
+        "calves",
+        "upper_back",
+        "traps"
+      ],
+      "typical_exercises": [
+        "Incline Bench Press (Smith Machine)",
+        "Bench Press (Smith Machine)",
+        "Decline Bench Press (Smith Machine)",
+        "Overhead Press (Smith Machine)",
+        "Squat (Smith Machine)",
+        "Romanian Deadlift (Smith Machine)",
+        "Bent Over Row (Smith Machine)",
+        "Shrug (Smith Machine)",
+        "Standing Calf Raise (Smith)",
+        "Hip Thrust (Smith Machine)"
+      ],
+      "notes": "Counterbalanced bar (near-zero initial resistance). Ratio: 1:1 direct vertical track. Plate-loaded, min increment 5kg total (2x2.5kg plates, no 1.25kg plates available). Bench is movable and fully removable (incline notch #11 or #12). Hevy mapping: flat press is 'Bench Press (Smith Machine)', calf raise is 'Standing Calf Raise (Smith)'. Hip thrust possible ('Hip Thrust (Smith Machine)') but dedicated machine preferred."
     },
     {
       "name": "Chest Press (Machine)",
-      "target_muscles": ["Chest", "Triceps", "Front Delts"],
-      "typical_exercises": ["Chest Press (Machine)"],
-      "notes": "Pin-loaded. Seat mat optional."
-    },
-    {
-      "name": "Pec Deck / Butterfly Machine",
-      "target_muscles": ["Chest"],
-      "typical_exercises": ["Butterfly (Pec Deck)"],
-      "notes": "Clean, controlled reps with peak contraction squeeze."
-    },
-    {
-      "name": "Reverse Fly / Rear Delt Machine",
-      "target_muscles": ["Rear Delts", "Upper Back"],
-      "typical_exercises": ["Rear Delt Reverse Fly (Machine)"],
-      "notes": "Sit slightly back, chest to pad, initiate with scapular protraction."
+      "target_muscles": [
+        "chest",
+        "shoulders",
+        "triceps"
+      ],
+      "typical_exercises": [
+        "Chest Press (Machine)",
+        "Iso-Lateral Chest Press (Machine)",
+        "Incline Chest Press (Machine)"
+      ],
+      "notes": "Pin-loaded stack: 5kg to 100kg in 5kg increments. Mechanical advantage ratio: 1:1. Dual grip options: horizontal and vertical/neutral (currently defaults to horizontal). Setup: optional rolled mat placed behind the back for enhanced ROM/scapular positioning. Hevy mapping: both horizontal and neutral grips log under 'Chest Press (Machine)' (specify grip in exercise notes)."
     },
     {
       "name": "Seated Shoulder Press (Machine)",
-      "target_muscles": ["Shoulders", "Triceps"],
-      "typical_exercises": ["Seated Shoulder Press (Machine)"],
-      "notes": "Elbows forward, push through wrists."
-    },
-    {
-      "name": "Cable Station / Functional Trainer",
-      "target_muscles": ["Back", "Arms", "Shoulders", "Chest"],
-      "typical_exercises": [
-        "Lat Pulldown (Cable)",
-        "Seated Cable Row - Bar Grip",
-        "Triceps Pressdown",
-        "Overhead Triceps Extension (Cable)",
-        "Face Pull"
+      "target_muscles": [
+        "shoulders",
+        "triceps"
       ],
-      "notes": "Pulleys have a 2:1 mechanical advantage ratio."
+      "typical_exercises": [
+        "Seated Shoulder Press (Machine)"
+      ],
+      "notes": "Pin-loaded stack: 5kg to 100kg in 5kg increments. Mechanical advantage ratio: 1:1. Grip options: horizontal (pronated) or neutral. Cues: keep elbows slightly forward, drive through wrists. Hevy mapping: both grip orientations log under 'Seated Shoulder Press (Machine)'."
     },
     {
       "name": "Leg Press (Machine)",
-      "target_muscles": ["Quads", "Glutes"],
-      "typical_exercises": ["Leg Press (Machine)"],
-      "notes": "Sled / plate-loaded."
+      "target_muscles": [
+        "quadriceps",
+        "glutes",
+        "hamstrings",
+        "calves"
+      ],
+      "typical_exercises": [
+        "Leg Press (Machine)",
+        "Single Leg Press (Machine)",
+        "Calf Press (Machine)"
+      ],
+      "notes": "45-degree incline sled. User logs ONLY loaded plates weight (ignoring ~20kg starting sled pre-load). Effective mechanical advantage ratio: ~0.71:1 (sin 45 deg) along the incline plane. Plate-loaded: plates available in 20kg, 15kg, 10kg, and 5kg. Footplate allows narrow/wide stances and calf presses ('Calf Press (Machine)')."
     },
     {
       "name": "Lying Leg Curl (Machine)",
-      "target_muscles": ["Hamstrings"],
-      "typical_exercises": ["Lying Leg Curl (Machine)"],
-      "notes": "Pin-loaded. Pad setting notch #5."
+      "target_muscles": [
+        "hamstrings",
+        "calves"
+      ],
+      "typical_exercises": [
+        "Lying Leg Curl (Machine)"
+      ],
+      "notes": "Pin-loaded weight stack: 5kg to 80kg in 5kg increments. Mechanical advantage ratio: 1:1 direct cam. Prone lying position with handles. Hevy muscle mapping: primary 'hamstrings', secondary 'calves'."
     },
     {
       "name": "Leg Extension (Machine)",
-      "target_muscles": ["Quads"],
-      "typical_exercises": ["Leg Extension (Machine)"],
-      "notes": "Pin-loaded."
+      "target_muscles": [
+        "quadriceps"
+      ],
+      "typical_exercises": [
+        "Leg Extension (Machine)",
+        "Single Leg Extensions"
+      ],
+      "notes": "Pin-loaded weight stack: 5kg to 80kg in 5kg increments. Mechanical advantage ratio: 1:1 direct cam. Seated position with side stability handles. Hevy mapping: bilateral is 'Leg Extension (Machine)', unilateral is 'Single Leg Extensions'."
     },
     {
       "name": "Hip Thrust Machine",
-      "target_muscles": ["Glutes", "Hamstrings"],
-      "typical_exercises": ["Hip Thrust (Machine)"],
-      "notes": "Belt/pad setup."
+      "target_muscles": [
+        "glutes",
+        "hamstrings",
+        "quadriceps",
+        "adductors"
+      ],
+      "typical_exercises": [
+        "Hip Thrust (Machine)"
+      ],
+      "notes": "Plate-loaded station with belt strap harness. Uses standard Olympic weight plates (20kg, 15kg, 10kg, 5kg). Pivoting lever arm (~1:1 ratio). User logs loaded plate weight. Hevy muscle mapping: primary 'glutes', secondary 'hamstrings', 'quadriceps', 'adductors'."
     },
     {
-      "name": "Hip Adduction Machine",
-      "target_muscles": ["Adductors (Inner Thigh)"],
-      "typical_exercises": ["Hip Adduction (Machine)"],
-      "notes": "Pin-loaded. Starting position pin hole #7."
+      "name": "Hyperextension / 45\u00b0 Back Extension Bench",
+      "target_muscles": [
+        "lower_back",
+        "hamstrings",
+        "glutes"
+      ],
+      "typical_exercises": [
+        "Back Extension (Weighted Hyperextension)",
+        "Back Extension (Hyperextension)"
+      ],
+      "notes": "45-degree angle bench with adjustable leg/footplate position. Resistance is provided by handheld Olympic weight plates (5kg, 10kg, 15kg, 20kg) held against chest. Hevy mapping: 'Back Extension (Weighted Hyperextension)' or 'Back Extension (Hyperextension)' (specify erector vs glute-rounded-back bias in exercise notes)."
     },
     {
-      "name": "Hip Abduction Machine",
-      "target_muscles": ["Glute Medius / Abductors"],
-      "typical_exercises": ["Hip Abduction (Machine)"],
-      "notes": "Pin-loaded."
+      "name": "Pec Deck / Rear Delt Fly Machine",
+      "target_muscles": [
+        "chest",
+        "shoulders (rear delts)",
+        "upper_back"
+      ],
+      "typical_exercises": [
+        "Butterfly (Pec Deck)",
+        "Chest Fly (Machine)",
+        "Rear Delt Reverse Fly (Machine)"
+      ],
+      "notes": "Single dual-function combo unit with pin-regulated swing arms. Stack: 5kg to 100kg in 5kg increments. Mechanical advantage ratio: 1:1. Settings: Butterfly uses arm pin #1 or #2 (facing forward). Reverse Fly uses arm pin #5 (sitting facing the pad in opposite direction, initiate with scapular protraction). Hevy mapping: 'Butterfly (Pec Deck)' (primary: chest) and 'Rear Delt Reverse Fly (Machine)' (primary: shoulders [rear delts], secondary: upper_back)."
     },
     {
-      "name": "Hyperextension / 45° Back Extension Bench",
-      "target_muscles": ["Lower Back", "Glutes", "Hamstrings"],
-      "typical_exercises": ["Back Extension (Weighted Hyperextension)"],
-      "notes": "Use plates or dumbbells for added resistance."
+      "name": "Dual Cable Functional Trainer",
+      "target_muscles": [
+        "triceps",
+        "biceps",
+        "forearms",
+        "shoulders",
+        "chest",
+        "lats",
+        "upper_back",
+        "traps",
+        "abdominals"
+      ],
+      "typical_exercises": [
+        "Triceps Pushdown",
+        "Triceps Pressdown",
+        "Overhead Triceps Extension (Cable)",
+        "Triceps Extension (Cable)",
+        "Single Arm Triceps Pushdown (Cable)",
+        "Reverse Grip Triceps Pushdown",
+        "Triceps Kickback (Cable)",
+        "Bicep Curl (Cable)",
+        "Hammer Curl (Cable)",
+        "Reverse Curl (Cable)",
+        "Face Pull",
+        "Lateral Raise (Cable)",
+        "Single Arm Lateral Raise (Cable)",
+        "Rear Delt Reverse Fly (Cable)",
+        "Reverse Fly Single Arm (Cable)",
+        "Upright Row (Cable)",
+        "Cable Fly Crossovers",
+        "Low Cable Fly Crossovers",
+        "Single Arm Cable Crossover",
+        "Seated Chest Flys (Cable)",
+        "Straight Arm Lat Pulldown (Cable)",
+        "Rope Straight Arm Pulldown",
+        "Shrug (Cable)",
+        "Cable Twist (Up to down)",
+        "Cable Twist (Down to up)"
+      ],
+      "notes": "Symmetric dual-stack cable crossover / functional trainer. Mechanical advantage ratio: 2:1 per side. Pin-loaded in 5kg plate steps. Fully adjustable vertical pulleys (bottom to top). Attachments: straight bar, V-bar, single rope, double ropes (short & long), single loop stirrup handles, 4-loop multi-grip strap. Hevy mapping note: both 'Triceps Pushdown' and 'Triceps Pressdown' exist in Hevy; woodchoppers map to 'Cable Twist (Up to down)' / 'Cable Twist (Down to up)'."
     },
     {
-      "name": "Captain's Chair / Pull-Up & Dip Tower",
-      "target_muscles": ["Abs", "Lats", "Chest"],
-      "typical_exercises": ["Hanging Knee Raise", "Pull-ups"],
-      "notes": "Vertical knee raise station."
+      "name": "Seated Cable Row (Station)",
+      "target_muscles": [
+        "upper_back",
+        "lats",
+        "traps",
+        "biceps",
+        "forearms"
+      ],
+      "typical_exercises": [
+        "Seated Cable Row - Bar Grip",
+        "Seated Cable Row - V Grip (Cable)",
+        "Seated Cable Row - Bar Wide Grip",
+        "Single Arm Cable Row"
+      ],
+      "notes": "Dedicated seated row station with footplates. Mechanical advantage ratio: 1:1. Pin-loaded stack in 5kg increments. Compatible with close-grip V-bar, neutral handles, and wide straight/lat bar. Hevy mapping: primary muscle is 'upper_back', secondary 'lats', 'biceps', 'forearms' (plus 'traps' on wide grip)."
+    },
+    {
+      "name": "Lat Pulldown (Station)",
+      "target_muscles": [
+        "lats",
+        "upper_back",
+        "biceps",
+        "forearms"
+      ],
+      "typical_exercises": [
+        "Lat Pulldown (Cable)",
+        "Lat Pulldown - Close Grip (Cable)",
+        "Reverse Grip Lat Pulldown (Cable)",
+        "Single Arm Lat Pulldown",
+        "Lat Pulldown (Machine)"
+      ],
+      "notes": "Dedicated seated lat pulldown station with adjustable thigh pads. Mechanical advantage ratio: 1:1. Pin-loaded stack in 5kg increments. Attachments available: wide lat bar, neutral grip attachments (wide to close/Mag grips), close-grip V-bar. Hevy mapping: neutral/Mag grips log under 'Lat Pulldown (Cable)' or 'Lat Pulldown - Close Grip (Cable)' (specify grip in exercise notes)."
+    },
+    {
+      "name": "Assisted Pull-Up & Dip Machine",
+      "target_muscles": [
+        "lats",
+        "upper_back",
+        "chest",
+        "triceps",
+        "shoulders",
+        "biceps",
+        "forearms",
+        "abdominals"
+      ],
+      "typical_exercises": [
+        "Pull Up (Assisted)",
+        "Pull Up",
+        "Wide Pull Up",
+        "Chin Up (Assisted)",
+        "Chin Up",
+        "Chest Dip (Assisted)",
+        "Chest Dip",
+        "Triceps Dip (Assisted)",
+        "Triceps Dip",
+        "Hanging Knee Raise",
+        "Hanging Leg Raise"
+      ],
+      "notes": "Counterbalance knee-pad platform. Ratio: 1:1 counterbalance (each 5kg pin reduces effective bodyweight by 5kg). 5kg increments. Kneeling platform folds down for unassisted bodyweight pull-ups, chin-ups, dips, and hanging knee/leg raises. Multi-grip pull-up handles and parallel dip bars. Hevy mapping: uses 'bodyweight_assisted' type for '(Assisted)' variants and 'reps_only' for unassisted variants."
+    },
+    {
+      "name": "Hip Adduction / Abduction Machine",
+      "target_muscles": [
+        "adductors",
+        "abductors"
+      ],
+      "typical_exercises": [
+        "Hip Adduction (Machine)",
+        "Hip Abduction (Machine)"
+      ],
+      "notes": "Single combo unit; switch rotating leg pad holders for adduction (inner thigh) vs abduction (glute medius / outer hip). Pin-loaded stack: 5kg to 100kg in 5kg increments. Mechanical advantage ratio: 1:1."
+    },
+    {
+      "name": "Power Cage / Squat Rack & Landmine Station",
+      "target_muscles": [
+        "quadriceps",
+        "glutes",
+        "hamstrings",
+        "lower_back",
+        "upper_back",
+        "lats",
+        "traps",
+        "shoulders",
+        "chest",
+        "triceps",
+        "biceps",
+        "forearms",
+        "abdominals"
+      ],
+      "typical_exercises": [
+        "Squat (Barbell)",
+        "Pause Squat (Barbell)",
+        "Box Squat (Barbell)",
+        "Sumo Squat (Barbell)",
+        "Bulgarian Split Squat (Barbell)",
+        "Romanian Deadlift (Barbell)",
+        "Deadlift (Barbell)",
+        "Single Leg Romanian Deadlift (Barbell)",
+        "Bent Over Row (Barbell)",
+        "Overhead Press (Barbell)",
+        "Seated Overhead Press (Barbell)",
+        "Bench Press (Barbell)",
+        "Incline Bench Press (Barbell)",
+        "Bench Press - Close Grip (Barbell)",
+        "Shrug (Barbell)",
+        "Standing Calf Raise (Barbell)",
+        "Landmine Row",
+        "T Bar Row",
+        "Single Arm Landmine Press (Barbell)",
+        "Landmine Squat and Press",
+        "Landmine 180"
+      ],
+      "notes": "Full power cage equipped with adjustable J-hooks and safety spotter arms. Uses standard 20kg Olympic barbell and Olympic plates (20kg, 15kg, 10kg, 5kg, 2.5kg). Direct 1:1 ratio for barbell lifts. Includes ground pivot sleeve (landmine attachment) compatible with single-handle, double-handle, and T-bar row attachments (~0.5:1 effective lever ratio on landmine). Movable bench can be rolled in for bench pressing."
+    },
+    {
+      "name": "Fixed Barbells Rack (Straight & EZ-Bars)",
+      "target_muscles": [
+        "biceps",
+        "triceps",
+        "forearms",
+        "shoulders",
+        "traps",
+        "upper_back"
+      ],
+      "typical_exercises": [
+        "Bicep Curl (Barbell)",
+        "EZ Bar Biceps Curl",
+        "Reverse Curl (Barbell)",
+        "21s Bicep Curl",
+        "Skullcrusher (Barbell)",
+        "Triceps Extension (Barbell)",
+        "Upright Row (Barbell)"
+      ],
+      "notes": "Fixed barbells from 5kg to 30kg in 5kg increments (5, 10, 15, 20, 25, 30kg). Both bar profiles available: standard straight bars and EZ-curl bars. Mechanical advantage ratio: 1:1. Hevy mapping: EZ-bar curl is 'EZ Bar Biceps Curl' (no hyphen, plural Biceps); EZ-bar skullcrushers/extensions log under 'Skullcrusher (Barbell)' / 'Triceps Extension (Barbell)'."
+    },
+    {
+      "name": "Dumbbell Racks & Adjustable Benches",
+      "target_muscles": [
+        "chest",
+        "shoulders",
+        "triceps",
+        "biceps",
+        "forearms",
+        "upper_back",
+        "lats",
+        "traps",
+        "quadriceps",
+        "glutes",
+        "hamstrings",
+        "calves"
+      ],
+      "typical_exercises": [
+        "Bench Press (Dumbbell)",
+        "Incline Bench Press (Dumbbell)",
+        "Decline Bench Press (Dumbbell)",
+        "Chest Fly (Dumbbell)",
+        "Incline Chest Fly (Dumbbell)",
+        "Shoulder Press (Dumbbell)",
+        "Seated Overhead Press (Dumbbell)",
+        "Overhead Press (Dumbbell)",
+        "Lateral Raise (Dumbbell)",
+        "Seated Lateral Raise (Dumbbell)",
+        "Rear Delt Reverse Fly (Dumbbell)",
+        "Chest Supported Reverse Fly (Dumbbell)",
+        "Chest Supported Incline Row (Dumbbell)",
+        "Dumbbell Row",
+        "Bent Over Row (Dumbbell)",
+        "Shrug (Dumbbell)",
+        "Bicep Curl (Dumbbell)",
+        "Hammer Curl (Dumbbell)",
+        "Seated Incline Hammer Curl (Dumbbell)",
+        "Cross Body Hammer Curl",
+        "Reverse Curl (Dumbbell)",
+        "Triceps Extension (Dumbbell)",
+        "Single Arm Tricep Extension (Dumbbell)",
+        "Skullcrusher (Dumbbell)",
+        "Triceps Kickback (Dumbbell)",
+        "Bulgarian Split Squat (Dumbbell)",
+        "Split Squat (Dumbbell)",
+        "Goblet Squat",
+        "Romanian Deadlift (Dumbbell)",
+        "Single Leg Romanian Deadlift (Dumbbell)",
+        "Hip Thrust (Dumbbell)",
+        "Single Leg Hip Thrust (Dumbbell)",
+        "Standing Calf Raise (Dumbbell)"
+      ],
+      "notes": "Two dumbbell racks: Rack 1 (1kg to 10kg in 1kg increments), Rack 2 (2.5kg to 40kg in 2.5kg increments). Multiple adjustable benches (flat, incline up to 90 degrees). Mechanical advantage ratio: 1:1."
+    },
+    {
+      "name": "Preacher Curl Stand / Bench",
+      "target_muscles": [
+        "biceps",
+        "forearms"
+      ],
+      "typical_exercises": [
+        "Preacher Curl (Barbell)",
+        "Preacher Curl (Dumbbell)"
+      ],
+      "notes": "Seated angled arm-support preacher bench with bar rack hooks. Compatible with fixed EZ-curl bars (5-30kg), straight barbells (5-30kg), or dumbbells. Ratio: 1:1. Hevy mapping: both straight and EZ-bar preacher curls log under 'Preacher Curl (Barbell)' (specify EZ-bar in exercise notes)."
+    },
+    {
+      "name": "Trap Bar / Hex Bar Station",
+      "target_muscles": [
+        "glutes",
+        "hamstrings",
+        "quadriceps",
+        "lower_back",
+        "upper_back",
+        "lats",
+        "traps",
+        "full_body"
+      ],
+      "typical_exercises": [
+        "Deadlift (Trap bar)",
+        "Farmers Walk",
+        "Shrug (Barbell)"
+      ],
+      "notes": "20kg Olympic trap bar / hex bar with dual high and low handle grips. Loaded with standard Olympic plates (20kg, 15kg, 10kg, 5kg, 2.5kg). Direct 1:1 ratio. Hevy mapping: trap bar deadlift is 'Deadlift (Trap bar)' (lowercase 'bar'); trap bar shrugs log under 'Shrug (Barbell)' with trap bar noted."
+    },
+    {
+      "name": "Functional Accessories & Mobility Station",
+      "target_muscles": [
+        "full_body",
+        "quadriceps",
+        "glutes",
+        "hamstrings",
+        "abductors",
+        "adductors",
+        "shoulders",
+        "upper_back",
+        "lats",
+        "biceps",
+        "abdominals"
+      ],
+      "typical_exercises": [
+        "Kettlebell Swing",
+        "Kettlebell Goblet Squat",
+        "Sumo Squat (Kettlebell)",
+        "Kettlebell Shoulder Press",
+        "Kettlebell Clean",
+        "Kettlebell Snatch",
+        "Kettlebell Turkish Get Up",
+        "Kettlebell Halo",
+        "Kettlebell Around the World",
+        "Gorilla Row (Kettlebell)",
+        "Thruster (Kettlebell)",
+        "Lateral Band Walks",
+        "Band Pullaparts",
+        "Clamshell",
+        "Squat (Band)",
+        "Deadlift (Band)"
+      ],
+      "notes": "Accessories: Standard set of kettlebells; loop and long resistance bands; yoga blocks (deficits, ROM targets); foot triangular squat wedges / slant blocks (heel elevation for quad-dominant squats, split squats, and calf raises). Hevy mapping: heel-elevated squats/split squats log under the primary barbell/dumbbell squat template with 'heel elevated on wedge' in notes."
     }
   ],
   "free_weights_and_bars": [
@@ -108,7 +444,7 @@
     },
     {
       "name": "Adjustable Benches",
-      "notes": "Flat to 90° incline adjustable benches."
+      "notes": "Flat to 90\u00b0 incline adjustable benches."
     }
   ],
   "cable_attachments": [
